@@ -2,7 +2,7 @@
     "name": "Turtle Trek",
     "short_name": "Trek",
     "start_url": "index.html",
-    "description":"Turtle Hatcheries"
+    "description":"Turtle Hatcheries",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

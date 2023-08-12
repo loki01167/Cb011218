@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="index_gallery/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="index_gallery/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="index_gallery/favicon-16x16.png">
+<link rel="manifest" href="index_gallery/site.webmanifest">
+<link rel="mask-icon" href="index_gallery/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+       
+    <div class="container_tickets">
+        <!--Navigation Bar-->
+                <nav>
+                    <a href="index.html"><img src="index_gallery/Logo.png" class="logo" alt="Logo"></a>
+                    <h1 id="buy">BUY TICKETS</h1>
+
+                </nav>   
+
+            </div>
+        
+        <a class="gototop" href="#"><img src="index_gallery/scroll.png" class="scroll_btn" alt="Logo"></a>
+
+        <div class="nav_t_container">
+            <h2  id="selected" class="nav_titles">TICKETS</h2>
+            <h2 class="nav_titles">DETAILS</h2>
+            <h2 class="nav_titles">PAYMENT</h2>
+            <h2 class="nav_titles">CONFIRMATION</h2>
+            
+        </div>
+        <div class="main_bg">
+            <br>
+            <div class="cont_2">
+                <h3 class="cate_t">DATES</h3>
+                <br>
+                <p class="para_dates">When are you coming?</p>
+
+<!--Calender-->
+<div class="calendar" id="calendar">
+    <div class="cal_header">
+        <button class="cal_button_minus" onclick="prevMonth()">&lt;</button>
+        <span class=cal_year id="monthYear"></span>
+        <button class="cal_button_plus" onclick="nextMonth()">&gt;</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody"></tbody>
+    </table>
+</div>
+  
+<!--Guests Section -->
+
+<h3 class="cate_t">GUESTS</h3>
+<br>
+<!--Table about the categoreis-->
+<table class="table_tickets">
+    <thead>
+        <tr>
+            <th>CATEGORY</th>
+            <th>CHARGE PER ONE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-title="Category">One normal hour for foreigner adult </td>
+            <td data-title="Charge per one">10 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One peak hour for foreigner adult </td>
+            <td data-title="Charge per one">13 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One normal hour for foreigner child  </td>
+            <td data-title="Charge per one">5 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One peak hour for foreigner child  </td>
+            <td data-title="Charge per one">8 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One normal hour for SL adult  </td>
+            <td data-title="Charge per one">4 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One peak hour for SL adult  </td>
+            <td data-title="Charge per one">6 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One normal hour for SL child </td>
+            <td data-title="Charge per one">2 USD</td>
+        </tr>
+
+        <tr>
+            <td data-title="Category">One peak hour for SL child  </td>
+            <td data-title="Charge per one">3 USD</td>
+        </tr>
+    </tbody>
+</table>
+                  <div class="guests">
+                    
+
+                    <div class="guests_line">
+                        <p class="g_title">SL ADULT</p>
+                        <p class="g_title2" id="subt1">Above 15 years</p>
+                    <div class="box" id="b1">
+                        <span class="minus1">-</span>
+                        <span class="num1">0</span>
+                        <span class="plus1">+</span>
+                    </div>
+                    </div>
+
+                    <div class="guests_line">
+                        <p class="g_title">SL CHILD</p>
+                        <p class="g_title2"id="subt2">4 to 14 years</p>
+                    <div class="box" id="b2">
+                        <span class="minus2">-</span>
+                        <span class="num2">0</span>
+                        <span class="plus2">+</span>
+                    </div>
+                    </div>
+
+                    <div class="guests_line">
+                        <p class="g_title">FOREIGNER ADULT</p>
+                        <p class="g_title2" id="subt3">Above 15 years</p>
+                    <div class="box" id="b3">
+                        <span class="minus3">-</span>
+                        <span class="num3">1</span>
+                        <span class="plus3">+</span>
+                    </div>
+                    </div>
+
+                    <div class="guests_line">
+                        <p class="g_title">FOREIGNER CHILD</p>
+                        <p class="g_title2" id="subt4">4 to 14 years</p>
+                    <div class="box" id="b4">
+                        <span class="minus4">-</span>
+                        <span class="num4">0</span>
+                        <span class="plus4">+</span>
+                    </div>
+                    </div>
+
+                    <div class="guests_line">
+                        <p class="g_title">INFANTS</p>
+                        <p class="g_title2" id="subt5">Under 4 years</p>
+                    <div class="box" id="b5">
+                        <span class="minus5">-</span>
+                        <span class="num5">0</span>
+                        <span class="plus5">+</span>
+                    </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <div class="cont_2">
+                    <h3 class="cate_t">DURATION</h3>
+                    <select name="timings" id="time" multiple>
+                        <option value="1">7.00am - 8.00am</option>
+                        <option value="2">8.00am - 9.00am</option>
+                        <option value="3">9.00am - 10.00am</option>
+                        <option value="4">10.00am - 11.00am (Peak)</option>
+                        <option value="5">11.00am - 12.00pm (Peak)</option>
+                        <option value="6">12.00pm - 1.00pm (Peak)</option>
+                        <option value="7">1.00pm - 2.00pm</option>
+                        <option value="8">2.00pm - 3.00pm</option>
+                        <option value="9">3.00pm - 4.00pm (Peak)</option>
+                        <option value="10">4.00pm - 5.00pm (Peak)</option>
+                        <option value="11">5.00pm - 6.00pm (Peak)</option>
+
+                    </select>
+
+                    <a href="./details.html"><button id="conti_purchase">CONTINUE WITH PURCHASE</button></a>
+
+                  </div>
+
+    
+<!--Summary table-->
+    
+            </div>
+            <div class="summary_cont">
+                <h3 class="sum_t">SUMMARY</h3>
+                <br>
+                <br>
+
+                <table class="sum_table" id="sum_table">
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td id="selected_date"></td>
+                        </tr>
+
+                        <tr>
+                            <td >Time</td>
+                            <td  id="selectedtime">7.00 am to 8.00 am</td>
+                        </tr>
+
+                        <tr>
+                            <td>Duration</td>
+                            <td id="selectedduration">1 hrs (01 Normal: 00 Peak)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="table_t_b">Tickets</td>
+                            <td class="table_t_b">Charges</td>
+                        </tr>
+
+                        <tr>
+                            <td>1 <span>Foreigner Adult</span></td>
+                            <td>$10</td>
+                        </tr>
+
+                        <tr>
+                            <td class="table_t_b">Total Payable</td>
+                            <td class="table_t_b" id="tot_pay">$10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    <script src="./tickets.js"></script>
+</body>
+
+<footer class="footer_main">
+    <p class="logo_con"><img src="index_gallery/Logo2.png" class="logo_f" alt="logo"></p>
+    <h4 class="f_title">TURTLE TREK</h4>
+ 
+     
+    <center><p class="f_text">We are Turtle Trek with one mission that is protecting the turtle population in srilanka. Furthermore, with this website we tend to educate young minds and the global population about the turtles existing in Sri  Lanka. Also by donating to our page you could make a huge difference</p></center>
+ 
+    <hr class="f_rule">
+    <h5 class="title_new">CONNECT WITH US!</h5>
+    <br>
+ 
+   
+     <div class="social_buttons">
+         <P class="logos_social">
+          <a href="https://www.instagram.com"><img src="index_gallery/insta_icon2.png" class="insta_logo" alt="Logo"></a>
+          <a href="https://www.twitter.com"><img src="index_gallery/twitter_icon2.png" class="twitter_logo" alt="Logo"></a>
+          <a href="https://www.facebook.com"><img src="index_gallery/fb_icon2.png" class="fb_logo" alt="Logo"></a>
+          </P>     
+      </div>
+ 
+      <div class="f_end">
+         <p class="f_text_last">©2023 BY LOKI TECH SOLUTIONS</p>
+      </div>
+    
+
+ 
+ </footer>
+</html>

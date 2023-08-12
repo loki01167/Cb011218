@@ -906,9 +906,9 @@ tfoot
     color:#338b93;
     text-align: center;
     text-justify:center;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: 3em;
-    margin-bottom: -8%;
+    margin-bottom: -6%;
 
 }
 
@@ -982,6 +982,7 @@ tfoot
 {
     align-items: center;
     justify-content: center;
+    margin-top: 1%;
 }
 .hikka_para
 {
@@ -1077,6 +1078,20 @@ tfoot
 
 }
 
+#book_now
+{
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    color: whitesmoke;
+    background-color:#00A4BD;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*Threats To Turtles*/
@@ -1765,6 +1780,580 @@ tfoot
     border-radius: 30px;
     margin-bottom: 2%;
 }
+
+/***********************************************************************************************************/
+/*Tickets Page*/
+
+/*Navigation bar*/
+.container_tickets{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+    
+}
+
+/*Title Buy Tickets*/
+#buy
+{
+    margin-left:30%;
+    font-size: 4em;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Navigation titles*/
+.nav_titles
+{
+    color: aliceblue;
+    font-size: 0.7em;
+    padding: 10px;
+    
+}
+
+/*Navigation titles bg container*/
+.nav_t_container
+{
+    display: flex;
+    width:100h;
+    margin-top: -30%;
+    background-color:#338b93;
+}
+
+/*Selected Title*/
+#selected
+{
+    color: black;
+}
+
+/*Main bg container*/
+.main_bg
+{
+    background-color: #00A4BD;
+    width: 100h;
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+/*Contianers*/
+.cont_2
+{
+    background-color:aliceblue;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.summary_cont
+{
+    background-color:aliceblue;
+    width: 47%;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+/*Title*/
+.cate_t
+{
+    color:#50575C;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sum_t
+{
+    color:#50575C;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+/*Dates para*/
+.para_dates
+{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color:#50575C;
+
+}
+
+/*Calender*/
+.calendar 
+{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    border-collapse: collapse;
+}
+.calendar th, .calendar td 
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.calendar .header 
+{
+    background-color:#338b93;
+}
+.calendar .selected {
+    background-color: #3498db;
+    color: white;
+}
+.cal_header
+{
+    background-color: #338b93;
+    padding: 10px;
+}
+
+.cal_button_minus
+{
+    background-color:#338b93;
+    color: whitesmoke;
+    padding: 5px;
+    position: relative;
+    margin-left: 3%;
+
+}
+.cal_button_plus
+{
+    background-color:#338b93;
+    color: whitesmoke;
+    padding: 5px;
+    position: relative;
+    margin-left: 5%;
+}
+.cal_year
+{
+    margin-left: 20%;
+}
+#monthYear
+{
+    font-size: 1.5em;
+    color: white;
+}
+/*Guests*/
+.box
+{
+    height: 50px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.box span
+{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+.box span.num
+{
+    font-size: 12px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+#b1
+{
+    margin-left: 31%;
+}
+#b2
+{
+    margin-left: 32%;
+}
+#b3
+{
+    margin-left: 30%;
+}
+#b4
+{
+    margin-left: 32%;
+}
+#b5
+{
+    margin-left: 31%;
+}
+
+#subt1
+{
+    margin-left: -16%;
+}
+
+#subt2
+{
+    margin-left: -15.5%;
+}
+
+#subt3
+{
+    margin-left: -26%;
+}
+
+#subt4
+{
+    margin-left: -26%;
+}
+
+#subt5
+{
+    margin-left: -15%;
+}
+.guests_line
+{
+    display: flex;
+}
+
+.g_title
+{
+    margin-left: 6%;
+    margin-top: 5%;
+    color: #50575C;
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+.g_title2
+{
+    color: #50575C;
+    margin-top: 11%;
+    margin-left: -27%;
+    font-size: 12px;
+}
+
+
+/*Guests Table*/
+.table_tickets
+{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.table_tickets tr
+{
+    padding: .45em;
+
+}
+
+thead tr
+{
+    background-color:#338b93;
+}
+
+
+tbody tr:nth-child(even)
+{
+    background-color:#eaeaea;
+}
+
+.table_tickets th,
+.table_tickets td
+{
+    font-size: 1em;
+    padding: 0.4em;
+
+}
+thead th
+{
+    color: var(--w);
+    font-size: 1.15em;
+}
+
+.table_t_b
+{
+    font-weight: bold;
+}
+
+/*Duration*/
+#time
+{
+    width: 180%;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 7px;
+    margin-bottom: 5%;
+}
+
+/*Continue purchase button*/
+#conti_purchase
+{
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 60%;
+    margin-bottom: 5%;
+    margin-right: -50%;
+    color: whitesmoke;
+    background-color:#00A4BD;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+}
+
+/*Summary Table*/
+.sum_table
+{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.sum_table tr
+{
+    padding: .45em;
+
+}
+
+
+tbody tr:nth-child(even)
+{
+    background-color:#eaeaea;
+}
+
+
+.sum_table td
+{
+    font-size: 1em;
+    padding: 0.4em;
+
+}
+
+
+/************************************************************************************************************/
+/************************************************************************************************************/
+/*Details Page*/
+
+/*Container lines*/
+.con_det_l1
+{
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.con_det_l2
+{
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.con_det_l3
+{
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+/*Fields allignment*/
+.details_user1
+{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.details_user
+{
+    margin-top: 3%;
+}
+.details_user3
+{
+    margin-top: 3%;
+}
+.details_user4
+{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.form_det
+{
+    color: #50575C;
+    font-weight: bold;
+}
+.det_sub
+{
+    font-size: 0.6em;
+    color: #50575C;
+    margin-top: 5%;
+}
+
+.form_box
+{
+    width: 250px;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+/*Continue purchase button*/
+#conti_purchase_det
+{
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-right: -50%;
+    color: whitesmoke;
+    background-color:#00A4BD;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+    cursor:grab;
+}
+
+#conti_purchase_det:disabled
+{
+    background-color: #eaeaea;
+    cursor: not-allowed;
+}
+
+/*Error message*/
+#full_name_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+#email_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+#c_email_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+#mobile_number_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/*Payments Page*/
+.det_sub_pay
+{
+    font-size: 1em;
+    color: #50575C;
+    margin-top: 3%;
+}
+
+.form_box_card
+{
+    width: 570px;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.details_user5
+{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+/*Pay button*/
+#pay_button
+{
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    margin-right: -50%;
+    color: whitesmoke;
+    background-color:#00A4BD;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+}
+
+
+
+#pay_button:disabled
+{
+    background-color: #eaeaea;
+    cursor: not-allowed;
+}
+
+#card_number_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+#exp_date_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+#cvc_cvv_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+
+#card_name_err
+{
+    font-size: .6em;
+    color: red;
+    margin-top: 2%;
+}
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/*Confirmation Page*/
+.confirmation_cont
+{
+    background-color:aliceblue;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.con_para
+{
+    color: #50575C;
+    margin-left: 1.5%;
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
 
 
 
@@ -2670,6 +3259,7 @@ tfoot
     }
 
 
+
     @media (max-width:420px)
     {
         #purchase
@@ -2894,5 +3484,322 @@ tfoot
         margin-left: -15%;
       }
 
-
+     
     }
+
+    /****************************************************************************************************/
+    /****************************************************************************************************/
+
+    /*Tickets Page*/
+
+/*Resoltion 300px to 500px*/
+@media screen and (max-width:500px) and (min-width:300px)
+{
+
+.container_tickets
+{
+    width: 100%;
+    height: 35vh;  
+}
+#buy
+{
+    margin-left:30%;
+    font-size: 2em;
+    margin-top: -25%;
+}
+
+.main_bg
+{
+    display:block;
+}
+.cont_2
+{
+    width: 98%;
+}
+.summary_cont
+{
+    width: 98%;
+}
+.calendar
+{
+    margin-left: 2%;
+}
+
+.calendar th, .calendar td 
+{
+    padding: 6px;
+}
+
+.box
+{
+    min-width: 50px;
+  
+}
+
+.g_title2
+{
+    color: #50575C;
+    margin-top: 17%;
+    font-size: 12px;
+}
+
+#time
+{
+    width: 90%;
+}
+
+
+/*Continue purchase button*/
+#conti_purchase
+{
+    font-size: 1em;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.sum_table
+{
+    margin-bottom: -2%;
+}
+
+.footer_main
+{
+    width: 100%;
+}
+
+}
+
+/*Resoltion 700px to 1200px*/
+@media screen and (max-width:1200px) and (min-width:700px)
+{
+
+.container_tickets
+{
+    width: 106%;
+    height: 31vh;  
+}
+
+.nav_t_container
+{
+    width: 106%;
+}
+.main_bg
+{
+    width: 106%;
+}
+#buy
+{
+    font-size: 3em;
+    margin-left: 20%;
+}
+.calendar th, .calendar td 
+{
+    padding: 3px;
+}
+.calendar
+{
+    margin-left: 15%;
+}
+.g_title2
+{
+    margin-top: 15%;
+}
+
+}
+
+/*Resoltion 1200px to 1300px*/
+@media screen and (max-width:1300px) and (min-width:1200px)
+{
+    .container_tickets
+    {
+        height: 64vh;
+    }
+}
+
+
+  /****************************************************************************************************/
+ /****************************************************************************************************/
+
+    /*Details Page*/
+
+/*Resoltion 300px to 500px*/
+@media screen and (max-width:500px) and (min-width:300px)
+{
+    .con_det_l2
+    {
+        display: block;
+    }
+    .con_det_l1
+    {
+        display: block;
+    }
+    .con_det_l3
+    {
+        display: block;
+        margin-left: -3%;
+    }
+    #conti_purchase_det
+    {
+        font-size: 1em;
+        margin-left: 15%;
+    }
+    .details_user1
+    {
+        margin-left: 1%;
+    }
+    .details_user
+    {
+        margin-left: 1%;
+    }
+    .details_user3
+    {
+        margin-left: 1%;
+    }
+    .details_user4
+    {
+        margin-left: 1%;
+    }
+  
+    .cont_2
+    {
+        margin-top: -1%;
+    }
+
+
+}
+
+/*Resoltion 700px to 1200px*/
+@media screen and (max-width:1200px) and (min-width:700px)
+{
+
+    .con_det_l2
+    {
+        display: block;
+    }
+    .con_det_l1
+    {
+        display: block;
+    }
+    .con_det_l3
+    {
+        display: block;
+        margin-left: -4%;
+    }
+    #conti_purchase_det
+    {
+        font-size: 1em;
+        margin-left: 15%;
+    }
+    .details_user1
+    {
+        margin-left: 1%;
+    }
+    .details_user
+    {
+        margin-left: 1%;
+    }
+    .details_user3
+    {
+        margin-left: 1%;
+    }
+    .details_user4
+    {
+        margin-left: 1%;
+    }
+  
+    .cont_2
+    {
+        margin-top: 1%;
+    }
+
+}
+
+
+/****************************************************************************************************/
+/****************************************************************************************************/
+
+    /*Payments Page*/
+
+/*Resoltion 300px to 500px*/
+@media screen and (max-width:500px) and (min-width:300px)
+{
+   .form_box_card
+   {
+    width: 80%;
+   }
+   .form_box
+   {
+    width: 80%;
+   }
+   .details_user5
+   {
+    margin-left: 1%;
+   }
+   #name_on_card
+   {
+    margin-left: 8%;
+    width: 74%;
+   }
+   #det_name_card
+   {
+    margin-left: 9%;
+   }
+
+}
+
+/*Resoltion 700px to 1200px*/
+@media screen and (max-width:1200px) and (min-width:700px)
+{
+
+    .form_box_card
+   {
+    width: 80%;
+   }
+   .form_box
+   {
+    width: 80%;
+   }
+   .details_user5
+   {
+    margin-left: 1%;
+   }
+   #name_on_card
+   {
+    margin-left: 8%;
+    width: 74%;
+   }
+   #det_name_card
+   {
+    margin-left: 9%;
+   }
+
+   .main_bg
+   {
+    height: 100vh;
+   }
+   .cont_2
+   {
+    height: 98%;
+   }
+   
+
+}
+
+/****************************************************************************************************/
+/****************************************************************************************************/
+
+    /*Confirmation Page*/
+
+/*Resoltion 300px to 500px*/
+@media screen and (max-width:500px) and (min-width:300px)
+{
+   .confirmation_cont
+   {
+    margin-top: -1%;
+   }
+
+}
+
+
+
+
