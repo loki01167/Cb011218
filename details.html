@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="index_gallery/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="index_gallery/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="index_gallery/favicon-16x16.png">
+    <link rel="manifest" href="index_gallery/site.webmanifest">
+    <link rel="mask-icon" href="index_gallery/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+    <body>
+
+       
+        <div class="container_tickets">
+            <!--Navigation Bar-->
+                    <nav>
+                        <a href="index.html"><img src="index_gallery/Logo.png" class="logo" alt="Logo"></a>
+                        <h1 id="buy">BUY TICKETS</h1>
+    
+                    </nav>   
+    
+                </div>
+            
+            <a class="gototop" href="#"><img src="index_gallery/scroll.png" class="scroll_btn" alt="Logo"></a>
+    
+            <div class="nav_t_container">
+                <h2 class="nav_titles">TICKETS</h2>
+                <h2 id=selected class="nav_titles">DETAILS</h2>
+                <h2 class="nav_titles">PAYMENT</h2>
+                <h2 class="nav_titles">CONFIRMATION</h2>
+                
+            </div>
+            <div class="main_bg">
+
+                <div class="cont_2">
+                    <h3 class="cate_t">ENTER YOUR DETAILS</h3>
+                    <br>
+                    <form id="details_form" action="#">
+                        <div class="con_det_l1">
+
+                            <div class="details_user">
+                                <div class="input_box">
+                                    <label for="fullname" class="form_det">Full Name</label>
+                                    <p class="det_sub">Same as on your ID</p>
+                                    <input type="text" class="form_box" placeholder="Full Name" name="full name" id="full_name" lang="fname" required>
+                                    <div id="full_name_err"></div>
+                                </div>
+                            </div>
+
+                            <div class="details_user1">
+                            
+                                <div class="input_box">
+                                    <label for="mobile_number" class="form_det">Mobile Number</label>
+                                    <p class="det_sub">We may reach out for booking here over SMS/Whatsapp</p>
+                                    <input type="tel" class="form_box" placeholder="Mobile Number" name="mobile_number" id="mobile_number" required>
+                                    <div id="mobile_number_err"></div>
+
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                        <div class="con_det_l2">
+
+                            <div class="details_user3">
+                                <div class="input_box">
+                                    <label for="email" class="form_det">Email</label>
+                                    <p class="det_sub">We'll send your tickets here</p>
+                                    <input type="text" class="form_box" placeholder="Email" name="email" id="email" required>
+                                    <div id="email_err"></div>
+
+                                </div>
+                            </div>
+
+                            <div class="details_user4">
+                                <div class="input_box">
+                                    <label for="confirm_email" class="form_det">Confirm Email</label>
+                                    <p class="det_sub">Just to ensure we've got this right</p>
+                                    <input type="text" class="form_box" placeholder="Re-enter your email" name="confirm_email" id="confirm_email" required>
+                                    <div id="c_email_err"></div>
+
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                        <div class="con_det_l3">
+
+                            <div class="details_user5">
+                                <div class="input_box">
+                                    <label for="gender" class="form_det">Gender</label>
+                                    <select name="gender" id="gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+            
+                    
+                        </div>
+                    </form>
+
+                    <a href="payments.html"><button id="conti_purchase_det" disabled>CONTINUE WITH PURCHASE</button></a> 
+
+                </div>
+                <!--Summary table-->
+
+                <div class="summary_cont">
+                    <h3 class="sum_t">SUMMARY</h3>
+                    <br>
+                    <br>
+    
+                    <table class="sum_table" id="sum_table">
+                        <tbody>
+                            <tr>
+                                <td>Date</td>
+                                <td id="selected_date"></td>
+                            </tr>
+    
+                            <tr>
+                                <td >Time</td>
+                                <td  id="selectedtime">7.00 am to 8.00 am</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Duration</td>
+                                <td id="selectedduration">1 hrs (01 Normal: 00 Peak)</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="table_t_b">Tickets</td>
+                                <td class="table_t_b">Charges</td>
+                            </tr>
+    
+                            <tr>
+                                <td>1 <span>Foreigner Adult</span></td>
+                                <td>$10</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="table_t_b">Total Payable</td>
+                                <td class="table_t_b">$10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        
+               
+           
+                       
+            </div>
+    
+        
+    
+    
+    
+    
+        <script src="./details.js"></script>
+    </body>
+    
+    <footer class="footer_main">
+        <p class="logo_con"><img src="index_gallery/Logo2.png" class="logo_f" alt="logo"></p>
+        <h4 class="f_title">TURTLE TREK</h4>
+     
+         
+        <center><p class="f_text">We are Turtle Trek with one mission that is protecting the turtle population in srilanka. Furthermore, with this website we tend to educate young minds and the global population about the turtles existing in Sri  Lanka. Also by donating to our page you could make a huge difference</p></center>
+     
+        <hr class="f_rule">
+        <h5 class="title_new">CONNECT WITH US!</h5>
+        <br>
+     
+       
+         <div class="social_buttons">
+             <P class="logos_social">
+              <a href="https://www.instagram.com"><img src="index_gallery/insta_icon2.png" class="insta_logo" alt="Logo"></a>
+              <a href="https://www.twitter.com"><img src="index_gallery/twitter_icon2.png" class="twitter_logo" alt="Logo"></a>
+              <a href="https://www.facebook.com"><img src="index_gallery/fb_icon2.png" class="fb_logo" alt="Logo"></a>
+              </P>     
+          </div>
+     
+          <div class="f_end">
+             <p class="f_text_last">©2023 BY LOKI TECH SOLUTIONS</p>
+          </div>
+        
+    
+     
+     </footer>
+</body>
+</html>
